@@ -1,0 +1,189 @@
+/* components/Home/MainContent.module.css */
+
+.root {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.headline {
+  font-size: 2.5rem;
+  background: linear-gradient(
+    to right,
+    #38b2ac,
+    #4299e1,
+    #667eea
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.subline {
+  margin-top: 24px;
+  max-width: 800px;
+  font-family: "Circular Web", sans-serif;
+  font-size: 1.125rem;
+  color: #2d3748;
+  opacity: 0.6;
+  line-height: 1.6;
+}
+
+.mainTilt {
+  margin-bottom: 28px;
+  width: 100%;
+  height: 65vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 28px;
+  width: 100%;
+  height: 135vh;
+}
+
+/* reuse these for the 2x1 and 1x1 spans */
+.tilt1 {
+  grid-row: span 2;
+}
+.tilt2 {
+  grid-row: span 1;
+}
+
+/* BentoTilt base */
+.bentoTilt {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+/* BentoCard */
+.bentoCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cardImage {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+}
+
+.cardDesc {
+  margin-top: 12px;
+  font-size: 0.875rem;
+  color: #ffffff;
+  max-width: 16rem;
+  line-height: 1.4;
+}
+
+/* Learn More button */
+.learnMore {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  border-radius: 9999px;
+  padding: 8px 20px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border: 2px solid #1a202c;
+}
+
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.arrowIcon {
+  z-index: 1;
+  color: #1a202c;
+}
+
+.learnText {
+  z-index: 1;
+  color: #1a202c;
+}
+
+/* Text‐only card */
+.textCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* push arrow to bottom */
+  height: 100%; /* make sure the card's height is fully used */
+  padding: 1rem; /* inner padding for overall spacing */
+  position: relative; /* optional but good practice */
+}
+
+.textCardTitle {
+  font-size: 1.875rem;
+  background: linear-gradient(
+    to right,
+    #38b2ac,
+    #4299e1,
+    #667eea
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.textCardDesc {
+  max-width: 300px; /* or whatever fits your design */
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000; /* subtle text color */
+}
+
+.textCardArrow {
+  align-self: flex-end;
+  font-size: 2rem;
+  color: #1a202c;
+  margin-top: auto; /* push it to bottom */
+  margin-right: 0;  /* no extra right margin needed */
+  margin-bottom: 0.5rem; /* space from bottom */
+}
