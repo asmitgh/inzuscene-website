@@ -60,7 +60,7 @@ export default function Preloader({ children }: PreloaderProps) {
         }`}
       >
         <img
-          src="/images/Logo.svg"
+          src="/images/Logo.webp"
           alt="Company Logo"
           className="h-[8rem] w-[24rem] mb-4"
         />
