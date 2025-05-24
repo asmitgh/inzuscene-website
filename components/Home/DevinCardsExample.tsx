@@ -17,7 +17,7 @@ const cardsData: CardData[] = [
     ],
     startColor: "#4a9ded",
     endColor: "#38b2ac",
-    imageUrl: "/use-cases/Logo1.png",
+    imageUrl: "/use-cases/Logo1.webp",
   },
   {
     id: "energy-utilities",
@@ -30,7 +30,7 @@ const cardsData: CardData[] = [
     ],
     startColor: "#38b2ac",
     endColor: "#4299e1",
-    imageUrl: "/use-cases/Logo2.png",
+    imageUrl: "/use-cases/Logo2.webp",
   },
   {
     id: "oil-gas",
@@ -43,7 +43,7 @@ const cardsData: CardData[] = [
     ],
     startColor: "#4299e1",
     endColor: "#36b3a8",
-    imageUrl: "/use-cases/Logo3.png",
+    imageUrl: "/use-cases/Logo3.webp",
   },
 ];
 const cardsData2: CardData[] = [
@@ -58,7 +58,7 @@ const cardsData2: CardData[] = [
       ],
       startColor: "#4a9ded",
       endColor: "#38b2ac",
-      imageUrl: "/use-cases/Logo4.jpg",
+      imageUrl: "/use-cases/Logo4.webp",
     },
     {
       id: "logistics-transportation",
@@ -71,7 +71,7 @@ const cardsData2: CardData[] = [
       ],
       startColor: "#38b2ac",
       endColor: "#4299e1",
-      imageUrl: "/use-cases/Logo5.jpg",
+      imageUrl: "/use-cases/Logo5.webp",
     },
     {
       id: "cross-industry",
@@ -84,7 +84,7 @@ const cardsData2: CardData[] = [
       ],
       startColor: "#4299e1",
       endColor: "#36b3a8",
-      imageUrl: "/use-cases/Logo6.jpg",
+      imageUrl: "/use-cases/Logo6.webp",
     },
   ];
   
