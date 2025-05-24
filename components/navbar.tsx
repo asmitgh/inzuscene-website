@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FC, useState, useEffect } from "react";
-import Logo from "@/public/images/Logo.svg";
+import Logo from "@/public/images/Logo.webp";
 import { useRouter } from "next/navigation";
 import { useIsMobile } from "../hooks/use-mobile"; // Import the hook
 
