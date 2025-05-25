@@ -419,7 +419,7 @@ export function ServiceCard({ service }: { service: ServiceCardProps }) {
                 </Tabs>
               </div>
               
-              {/* Contact Button */}
+              {/* Contact Button
               <div className="sticky bottom-0 left-0 right-0 p-4 sm:p-6 bg-gradient-to-t from-white via-white to-transparent dark:from-gray-900 dark:via-gray-900 pt-8">
                 <Button
                   size="lg"
@@ -432,7 +432,7 @@ export function ServiceCard({ service }: { service: ServiceCardProps }) {
                 >
                   Contact Us About This Service
                 </Button>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         )}
