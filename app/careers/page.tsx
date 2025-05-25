@@ -14,7 +14,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { SplineComponent } from "@/components/Home/SplineComponent"
+import dynamic from "next/dynamic";
+const SplineComponent = dynamic(
+  () => import("@/components/Home/SplineComponent").then(mod => mod.SplineComponent),
+  {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+  }
+);
 const jobs = [
   {
     id: "ifs-finance",

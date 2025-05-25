@@ -18,7 +18,14 @@ import { toast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { SplineComponent } from "@/components/Home/SplineComponent"
+import dynamic from "next/dynamic";
+const SplineComponent = dynamic(
+  () => import("@/components/Home/SplineComponent").then(mod => mod.SplineComponent),
+  {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+  }
+);
 import { Textarea } from "@/components/ui/textarea";
 import {
   Select,

@@ -9,7 +9,14 @@ import { TypewriterText, AnimatedText } from "@/components/animated-text";
 import { BrochureDownload } from "@/components/brochure-download";
 import { staggerContainer, textVariant } from "@/lib/animations";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { SplineComponent } from "@/components/Home/SplineComponent"
+import dynamic from "next/dynamic";
+const SplineComponent = dynamic(
+  () => import("@/components/Home/SplineComponent").then(mod => mod.SplineComponent),
+  {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+  }
+);
 export default function ServicesPage() {
   /* ──────────────── hooks ──────────────── */
   const controls = useAnimation();

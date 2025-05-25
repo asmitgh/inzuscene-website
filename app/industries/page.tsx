@@ -23,7 +23,14 @@ import {
 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
-import { SplineComponent } from "@/components/Home/SplineComponent"
+import dynamic from "next/dynamic";
+const SplineComponent = dynamic(
+  () => import("@/components/Home/SplineComponent").then(mod => mod.SplineComponent),
+  {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+  }
+);
 // Assuming industries data is defined elsewhere
 /* ---------- helpers ---------- */
 const u = (id: string) =>

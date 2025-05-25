@@ -6,8 +6,15 @@ import { Globe, Users, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { LogoCarousel } from "@/components/partners-carousel";
-import { useIsMobile } from "@/hooks/use-mobile"; // Import the hook
-import { SplineComponent } from "@/components/Home/SplineComponent"
+import { useIsMobile } from "@/hooks/use-mobile"; 
+import dynamic from "next/dynamic";
+const SplineComponent = dynamic(
+  () => import("@/components/Home/SplineComponent").then(mod => mod.SplineComponent),
+  {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+  }
+);
 export default function PartnersPage() {
   const isMobile = useIsMobile(); // Use the hook to detect mobile
   
