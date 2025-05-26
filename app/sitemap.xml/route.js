@@ -7,7 +7,7 @@ export async function GET() {
 
   // Fetch dynamic routes (e.g., from CMS, DB, file system)
   const dynamicRoutes = [
-    // '/blog/ai-powered-business',
+    '/blog',
     // '/blog/ifs-implementation-tips',
     // Add logic to pull this from DB or file system
   ];
