@@ -14,8 +14,4 @@ export function GET() {
       },
     });
   }
-<<<<<<< HEAD
   
-=======
-  
->>>>>>> c8c0466a38d035860b4a0d36133ce93441abfab5
