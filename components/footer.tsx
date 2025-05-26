@@ -214,7 +214,7 @@ export function Footer() {
             <div className="flex space-x-4 md:space-x-6 mt-3 md:mt-0">
               <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
               <Link href="/terms" className="hover:text-white">Terms of Service</Link>
-              <Link href="/sitemap" className="hover:text-white">Sitemap</Link>
+              <Link href="/sitemap.xml" className="hover:text-white">Sitemap</Link>
             </div>
           </div>
         <div className={`flex flex-col pt-4 md:pt-8 text-left items-left ${isMobile ? 'text-xs' : 'text-sm'}`}>All content is owned by Inzuscene. Reproduction or distribution without written consent is prohibited. Website content is for general use. We make no guarantees on accuracy, completeness, or timeliness. Inzuscene is not liable for any direct, indirect, or consequential damages from use of this site. Information you submit is handled in line with our Privacy Policy and used only for communication or service-related purposes. For further details, please contact <a href="mailto:info@inzuscene.com" className="text-blue-400 hover:text-blue-300 ml-1">info@inzuscene.com</a><span className="block text-white text-xs mt-4">ISO 9001, 27001 and 20001 Certified | NASSCOM</span></div>
