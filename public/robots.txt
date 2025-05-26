@@ -3,13 +3,12 @@ User-agent: *
 Disallow: /api/
 Disallow: /private/
 Disallow: /dev/
-Disallow: /404
 Disallow: /500
 
 Allow: /
 
 # Crawl delay (optional, only used by Bing, Yandex)
-Crawl-delay: 10
+Crawl-delay: 1
 
 # Sitemap link (absolutely critical for indexing)
 Sitemap: https://inzuscene.com/sitemap.xml
