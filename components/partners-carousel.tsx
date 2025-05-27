@@ -35,7 +35,6 @@ const clients = [
   { name: "MTN", logo: "/logos/clients/31.svg" },
   { name: "Instituto del Rosario", logo: "/logos/clients/32.svg" },
   { name: "NOMAC", logo: "/logos/clients/33.svg" },
-  { name: "CIRC", logo: "/logos/clients/34.svg" },
   { name: "Pilansberg Platinum Mines", logo: "/logos/clients/35.svg" },
   { name: "SEYPEC", logo: "/logos/clients/36.svg" },
   { name: "Deloitte", logo: "/logos/clients/37.svg" },
