@@ -34,7 +34,7 @@ const nextConfig = {
     unoptimized: false, // 🔄 Turned off manual mode
     formats: ['image/webp'], // Enable WebP conversion
     minimumCacheTTL: 60, // Cache optimized images
-    domains: ['yourdomain.com'], // Add your domain here
+    domains: ['inzuscene.com','images.pexels.com','images.unsplash.com','img.freepik.com','images.unsplash.com','images.pexels.com','images.unsplash.com','img.freepik.com'],
   },
 
   experimental: {
